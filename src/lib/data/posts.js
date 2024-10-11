@@ -1,6 +1,7 @@
 import { browser } from '$app/environment'
 import { format } from 'date-fns'
 import { parse } from 'node-html-parser'
+import { render } from 'svelte/server';
 import readingTime from 'reading-time/lib/reading-time.js'
 
 // we require some server-side APIs to parse all metadata
@@ -11,7 +12,7 @@ if (browser) {
 // Get all posts and add metadata
 export const posts = Object.entries(import.meta.glob('/posts/**/*.md', { eager: true }))
   .map(([filepath, post]) => {
-    const html = parse(post.default.render().html)
+    const html = parse(render(post.default).body)
     const preview = post.metadata.preview ? parse(post.metadata.preview) : html.querySelector('p')
 
     return {
