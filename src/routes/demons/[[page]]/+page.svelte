@@ -1,5 +1,5 @@
 <script>
-  import { name, bio } from '$lib/info.js'
+  import { name, tagline } from '$lib/info.js'
   import ArrowLeftIcon from '$lib/components/ArrowLeftIcon.svelte'
   import ArrowRightIcon from '$lib/components/ArrowRightIcon.svelte'
   import PostsList from '$lib/components/PostsList.svelte'
@@ -21,7 +21,7 @@
       All demon sightings
     </h2>
     <p class="text-base italic text-zinc-600 dark:text-zinc-400">
-      {bio}
+      {tagline}
     </p>
   </header>
 

@@ -1,5 +1,5 @@
 <script>
-  import { website, name, bio, avatar } from '$lib/info.js'
+  import { website, name, tagline, avatar } from '$lib/info.js'
   import ToC from '$lib/components/ToC.svelte'
   import ArrowLeftIcon from '$lib/components/ArrowLeftIcon.svelte'
   import SocialLinks from '$lib/components/SocialLinks.svelte'
@@ -89,7 +89,7 @@
       </div>
     </article>
 
-    <!-- bio -->
+    <!-- tagline -->
     <hr />
     <div class="py-8">
       <div class="grid gap-8">
@@ -108,7 +108,7 @@
           {/if}
         </div>
         <p class="order-3 text-base italic text-zinc-600 dark:text-zinc-400">
-          {bio}
+          {tagline}
         </p>
       </div>
     </div>

@@ -4,6 +4,6 @@ import { posts } from '$lib/data/posts'
 export async function load() {
   return {
     is_homepage: true,
-    posts: posts.slice(0, 5)
+    posts: posts
   }
 }

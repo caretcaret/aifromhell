@@ -2,7 +2,7 @@
   import ArrowRightIcon from '$lib/components/ArrowRightIcon.svelte'
   import PostsList from '$lib/components/PostsList.svelte'
   import SocialLinks from '$lib/components/SocialLinks.svelte'
-  import { avatar, bio, name } from '$lib/info.js'
+  import { avatar, tagline, name } from '$lib/info.js'
 
   /** @type {import('./$types').PageData} */
   export let data
@@ -10,7 +10,7 @@
 
 <svelte:head>
   <title>{name}</title>
-  <meta name="description" content={bio} />
+  <meta name="description" content={tagline} />
 </svelte:head>
 
 <div class="flex flex-col flex-grow gap-8 pb-16">
@@ -27,7 +27,7 @@
         </h1>
       </a>
       <p class="text-lg italic text-zinc-600 dark:text-zinc-400">
-        {bio}
+        {tagline}
       </p>
       {#if avatar}
         <img
@@ -43,13 +43,15 @@
   </section>
   <section class="w-full">
     <div class="flex items-center justify-between gap-4 mb-8">
-      <h2 class="text-sm font-medium sm:text-base text-zinc-500 dark:text-zinc-400">
+      <h2 class="text-sm font-medium sm:text-base text-red-800 dark:text-red-200">
         Newest demons
       </h2>
-      <a href="/demons" class="flex items-center gap-1 text-sm font-medium text-red-500"
-        >View all sightings <ArrowRightIcon class="w-4 h-4" /></a
-      >
+      {#if data.posts.length > 4}
+        <a href="/demons" class="flex items-center gap-1 text-sm font-medium text-red-500"
+          >View all sightings <ArrowRightIcon class="w-4 h-4" /></a
+        >
+      {/if}
     </div>
-    <PostsList posts={data.posts} />
+    <PostsList posts={data.posts.slice(0, 4)} />
   </section>
 </div>

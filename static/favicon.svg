@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <filter id="red">
+            <feColorMatrix type="matrix" values="
+            0.93 0 0 0 0
+            0.07 0 0 0 0
+            0.07 0 0 0 0
+            0 0 0 1 0" />
+        </filter>
+    </defs>
+    <g filter="url(#red)">
+        <text y="30" font-size="30">🔱</text>
+    </g>
+</svg>

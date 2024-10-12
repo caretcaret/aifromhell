@@ -26,7 +26,7 @@
     }
   }
   function setActiveHeading() {
-    scrollY = window.scrollY
+    scrollY = window.scrollY + window.innerHeight / 4
 
     const visibleIndex =
       elements.findIndex((element) => element.offsetTop + element.clientHeight > scrollY) - 1

@@ -9,7 +9,7 @@ export const name = 'AI FROM HELL'
 
 // Used for the landing page & footer of posts
 export const avatar = ''
-export const bio = "AI from hell is here on Earth, and it's because of humans in the loop."
+export const tagline = "AI from hell is here on Earth, and it's because of humans in the loop."
 
 // Your social usernames, empty strings won't be used.
 // For sake of the live demo, I'm using `username/repo` for github,
