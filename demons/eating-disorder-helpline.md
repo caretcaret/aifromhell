@@ -1,14 +1,23 @@
 ---
 title: Eating Disorder Helpline Disables Chatbot for ‘Harmful’ Responses After Firing Human Staff
 date: 2024-10-12
-source: https://www.vice.com/en/article/eating-disorder-helpline-disables-chatbot-for-harmful-responses-after-firing-human-staff/
-source_date: 2023-05-30
+source:
+    url: https://www.vice.com/en/article/eating-disorder-helpline-disables-chatbot-for-harmful-responses-after-firing-human-staff/
+    date: 2023-05-30
+    title: Eating Disorder Helpline Disables Chatbot for ‘Harmful’ Responses After Firing Human Staff
+    image: https://www.vice.com/wp-content/uploads/sites/2/2023/05/1685482949212-gettyimages-1490978700.jpeg
+    description: Every single thing Tessa suggested were things that led to the development of my eating disorder.
+    author: Chloe Xiang
+    site_name: VICE
 decision_maker: Liz Thompson, CEO of National Eating Disorder Association (NEDA)
-preview: Instead of supporting the workers who power their sensitive helpline, NEDA chose to replace them with an incapable chatbot.
+summary: Instead of supporting the workers who power their sensitive helpline, NEDA chose to replace them with an incapable chatbot.
 ---
 
-[From Vice]({source})
+![{source.description}]({source.image})
 
-**[The Human in the Loop](human-in-the-loop):** {decision_maker}
+[From {source.author}, {source.site_name}]({source.url}): {source.description}
 
-**What they did:** {preview}
+## Human in the Loop
+
+- {decision_maker}
+- {summary}
