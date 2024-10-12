@@ -18,7 +18,7 @@
 <div class="flex flex-col flex-grow">
   <header class="pt-4">
     <h2 class="text-4xl font-bold tracking-tight sm:text-5xl">
-      Demon sightings
+      All demon sightings
     </h2>
     <p class="text-base italic text-zinc-600 dark:text-zinc-400">
       {bio}

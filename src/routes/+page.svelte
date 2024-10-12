@@ -35,10 +35,10 @@
   <section class="w-full">
     <div class="flex items-center justify-between gap-4 mb-8">
       <h2 class="text-sm font-medium sm:text-base text-zinc-500 dark:text-zinc-400">
-        Newest
+        Newest demons
       </h2>
       <a href="/demons" class="flex items-center gap-1 text-sm font-medium text-red-500"
-        >View All <ArrowRightIcon class="w-4 h-4" /></a
+        >View all sightings <ArrowRightIcon class="w-4 h-4" /></a
       >
     </div>
     <PostsList posts={data.posts} />
