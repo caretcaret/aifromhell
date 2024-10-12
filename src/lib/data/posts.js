@@ -10,7 +10,7 @@ if (browser) {
 }
 
 // Get all posts and add metadata
-export const posts = Object.entries(import.meta.glob('/posts/**/*.md', { eager: true }))
+export const posts = Object.entries(import.meta.glob('/demons/**/*.md', { eager: true }))
   .map(([filepath, post]) => {
     const html = parse(render(post.default).body)
     const preview = post.metadata.preview ? parse(post.metadata.preview) : html.querySelector('p')
@@ -25,7 +25,7 @@ export const posts = Object.entries(import.meta.glob('/posts/**/*.md', { eager: 
         .pop(),
 
       // whether or not this file is `my-post.md` or `my-post/index.md`
-      // (needed to do correct dynamic import in posts/[slug].svelte)
+      // (needed to do correct dynamic import in demons/[slug].svelte)
       isIndexFile: filepath.endsWith('/index.md'),
 
       // format date as yyyy-MM-dd

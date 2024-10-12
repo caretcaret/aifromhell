@@ -1,10 +1,10 @@
 # AI From Hell
 
-AI Hell on Earth is here, and it's caused by humans in the loop.
+*AI Hell on Earth is here, and it's caused by humans in the loop.*
 
 ## How to contribute
 
-Add a new markdown file in `posts/`, following the format of the other posts. Send a pull request.
+Add a new markdown file in `demons/`, following the format of the other posts. Send a pull request.
 
 ## How to develop
 
@@ -12,4 +12,9 @@ Add a new markdown file in `posts/`, following the format of the other posts. Se
 
 ## How to deploy
 
-TODO: set up GitHub Actions to build and serve through GitHub Pages.
+TODO: set up GitHub Actions to build and serve through GitHub Pages. This should do `npm run build` to build a static site.
+
+## Notes to self
+
+TODO grab screenshot of article or something
+TODO set up deployment

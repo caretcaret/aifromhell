@@ -8,8 +8,8 @@ export const website = 'https://aifromhell.com'
 export const name = 'AI From Hell'
 
 // Used for the landing page & footer of posts
-export const avatar = 'https://picsum.photos/id/203/250/250'
-export const bio = "AI hell on Earth is here, and it's caused by humans in the loop."
+export const avatar = ''
+export const bio = "AI hell on Earth is here, and it's because of humans in the loop."
 
 // Your social usernames, empty strings won't be used.
 // For sake of the live demo, I'm using `username/repo` for github,
