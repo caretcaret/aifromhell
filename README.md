@@ -8,13 +8,8 @@ Add a new markdown file in `demons/`, following the format of the other posts. S
 
 ## How to develop
 
-`npm install --legacy-peer-deps` and then `npm run dev` should work. This is built on SvelteKit, https://learn.svelte.dev/ is a good introduction.
+`npm install --legacy-peer-deps` and then `npm run dev` should work. This is built on SvelteKit, https://learn.svelte.dev/ is a good introduction. Use this to preview your markdown change.
 
 ## How to deploy
 
-TODO: set up GitHub Actions to build and serve through GitHub Pages. This should do `npm run build` to build a static site.
-
-## Notes to self
-
-TODO grab screenshot of article or something
-TODO set up deployment
+A static site will be built using [`adapter-static`](https://kit.svelte.dev/docs/adapter-static#github-pages). It will deploy on push to `main`.
