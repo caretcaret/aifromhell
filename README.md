@@ -1,19 +1,15 @@
-# SvelteKit Blog Template
+# AI From Hell
 
-A SvelteKit blog template built on mdsvex and Tailwind.
+AI Hell on Earth is here, and it's caused by humans in the loop.
 
-[Demo](https://sveltekit-blog-template.vercel.app)
+## How to contribute
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fmattjennings%2Fsveltekit-blog-template)
+Add a new markdown file in `posts/`, following the format of the other posts. Send a pull request.
 
-# Credits
+## How to develop
 
-- [pngwn](https://github.com/pngwn) for mdsvex and helping me with the `mdsvex-relative-images` plugin
-  - https://github.com/pngwn/MDsveX/discussions/246#discussioncomment-720947
-- Tailwind's ["Spotlight" blog template](https://spotlight.tailwindui.com/)
-  - Overall theme is heavily based on this template
-- All who have contributed!
+`npm install --legacy-peer-deps` and then `npm run dev` should work. This is built on SvelteKit, https://learn.svelte.dev/ is a good introduction.
 
-  <a href="https://github.com/mattjennings/sveltekit-blog-template/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=mattjennings/sveltekit-blog-template" />
-  </a>
+## How to deploy
+
+TODO: set up GitHub Actions to build and serve through GitHub Pages.
