@@ -1,6 +1,6 @@
 # AI From Hell
 
-*AI Hell on Earth is here, and it's because of humans in the loop.*
+*AI from hell is here on Earth, and it's because of humans in the loop.*
 
 ## How to contribute
 

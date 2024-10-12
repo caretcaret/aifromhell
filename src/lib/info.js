@@ -5,11 +5,11 @@
 // URL of your website
 export const website = 'https://aifromhell.com'
 
-export const name = 'AI From Hell'
+export const name = 'AI FROM HELL'
 
 // Used for the landing page & footer of posts
 export const avatar = ''
-export const bio = "AI hell on Earth is here, and it's because of humans in the loop."
+export const bio = "AI from hell is here on Earth, and it's because of humans in the loop."
 
 // Your social usernames, empty strings won't be used.
 // For sake of the live demo, I'm using `username/repo` for github,

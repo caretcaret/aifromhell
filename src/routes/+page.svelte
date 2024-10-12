@@ -15,8 +15,17 @@
 
 <div class="flex flex-col flex-grow gap-8 pb-16">
   <!-- bio -->
-  <section class="flex flex-col items-center gap-16 pt-8 pb-16">
+  <section class="flex flex-col items-center gap-16 pb-16">
     <div class="flex flex-col items-center w-full gap-6 rounded-lg">
+      <a
+        href="/"
+      >
+        <h1
+          class="text-5xl font-bold tracking-tighter text-nowrap sm:text-7xl !text-transparent bg-clip-text bg-gradient-to-b from-red-500 to-red-700 dark:to-red-300"
+        >
+          AI FROM HELL
+        </h1>
+      </a>
       {#if avatar}
         <img
           src={avatar}
