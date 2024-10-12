@@ -93,7 +93,7 @@
     <hr />
     <div class="py-8">
       <div class="grid gap-8">
-        <div class="flex justify-center order-1 col-span-2 gap-6 md:order-2">
+        <div class="flex justify-center order-1 col-span-2 gap-4 md:order-2">
           <SocialLinks />
         </div>
         <div class="flex justify-center order-2 md:order-1 md:col-span-2">

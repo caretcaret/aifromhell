@@ -12,7 +12,7 @@
 </script>
 
 <svelte:head>
-  <title>{name} | Demon sightings</title>
+  <title>{name} 𓃶 All demon sightings</title>
 </svelte:head>
 
 <div class="flex flex-col flex-grow">
@@ -51,10 +51,6 @@
 
 <style>
   a {
-    @apply flex items-center gap-2 font-medium text-zinc-700;
-  }
-
-  :global(.dark) a {
-    @apply text-zinc-300;
+    @apply flex items-center gap-2 font-medium text-red-500;
   }
 </style>

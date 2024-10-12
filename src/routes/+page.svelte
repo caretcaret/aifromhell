@@ -16,7 +16,7 @@
 <div class="flex flex-col flex-grow gap-8 pb-16">
   <!-- bio -->
   <section class="flex flex-col items-center gap-16 pb-16">
-    <div class="flex flex-col items-center w-full gap-6 rounded-lg">
+    <div class="flex flex-col items-center w-full gap-4 rounded-lg">
       <a
         href="/"
       >
@@ -26,7 +26,7 @@
           AI FROM HELL
         </h1>
       </a>
-      <p class="text-base italic text-zinc-600 dark:text-zinc-400">
+      <p class="text-lg italic text-zinc-600 dark:text-zinc-400">
         {bio}
       </p>
       {#if avatar}
