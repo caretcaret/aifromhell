@@ -4,18 +4,21 @@
   import ArrowRightIcon from '$lib/components/ArrowRightIcon.svelte'
   import PostsList from '$lib/components/PostsList.svelte'
   import { page } from '$app/stores'
+  import Tagline from '$lib/components/Tagline.svelte'
 
   /** @type {import('./$types').PageData} */
   export let data
 
   $: isFirstPage = data.page === 1
   $: hasNextPage = data.posts[data.posts.length - 1]?.previous
+
+  const title = name + ' 𓃶 All demon sightings'
 </script>
 
 <svelte:head>
-  <title>{name} 𓃶 All demon sightings</title>
+  <title>{title}</title>
   <meta name="description" content={tagline} />
-  <meta property="og:title" content={name} />
+  <meta property="og:title" content={title} />
   <meta property="og:type" content="website" />
 	<meta property="og:description" content={tagline} />
 	<meta property="og:url" content={website + $page.url.pathname} />
@@ -24,7 +27,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta property="twitter:domain" content={website} />
   <meta property="twitter:url" content={website + $page.url.pathname} />
-  <meta name="twitter:title" content={name} />
+  <meta name="twitter:title" content={title} />
   <meta name="twitter:description" content={tagline} />
   <meta name="twitter:image" content={website + '/cover.png'} />
 </svelte:head>
@@ -34,8 +37,8 @@
     <h2 class="text-3xl font-bold tracking-tight sm:text-4xl text-red-800 dark:text-red-200">
       All demon sightings
     </h2>
-    <p class="text-base italic text-zinc-600 dark:text-zinc-400">
-      {tagline}
+    <p class="text-base italic text-zinc-600 dark:text-zinc-400 prose">
+      <Tagline />
     </p>
   </header>
 
@@ -51,7 +54,7 @@
         Previous
       </a>
     {:else}
-      <div />
+      <div></div>
     {/if}
 
     {#if hasNextPage}
