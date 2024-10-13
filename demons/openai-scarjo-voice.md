@@ -16,7 +16,6 @@ summary: Sam Altman chooses to recreate Scarlett Johannson's likeness, even afte
 
 [From {source.author}, {source.site_name}]({source.url}): {source.description}
 
-## Human in the Loop
+**Human in the Loop**: {decision_maker}
 
-- {decision_maker}
-- {summary}
+{summary}

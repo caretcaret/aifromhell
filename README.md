@@ -1,4 +1,4 @@
-# AI From Hell
+# AI FROM HELL
 
 *AI from hell is here on Earth, and it's because of humans in the loop.*
 
@@ -12,4 +12,4 @@ Add a new markdown file in `demons/`, following the format of the other posts. S
 
 ## How to deploy
 
-A static site will be built using [`adapter-static`](https://kit.svelte.dev/docs/adapter-static#github-pages). It will deploy on push to `main`.
+A static site will be built using [`adapter-static`](https://kit.svelte.dev/docs/adapter-static#github-pages). It will deploy to GitHub Pages on push to `main`.

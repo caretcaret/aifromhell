@@ -2,6 +2,7 @@
   import ArrowRightIcon from '$lib/components/ArrowRightIcon.svelte'
   import PostsList from '$lib/components/PostsList.svelte'
   import SocialLinks from '$lib/components/SocialLinks.svelte'
+  import Tagline from '$lib/components/Tagline.svelte'
   import { avatar, tagline, name } from '$lib/info.js'
 
   /** @type {import('./$types').PageData} */
@@ -26,8 +27,8 @@
           AI FROM HELL
         </h1>
       </a>
-      <p class="text-lg italic text-zinc-600 dark:text-zinc-400">
-        {tagline}
+      <p class="text-lg italic text-zinc-600 dark:text-zinc-400 prose">
+        <Tagline />
       </p>
       {#if avatar}
         <img

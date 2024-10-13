@@ -5,6 +5,7 @@
   import SocialLinks from '$lib/components/SocialLinks.svelte'
   import { afterNavigate } from '$app/navigation'
   import PostDate from '$lib/components/PostDate.svelte'
+  import Tagline from '$lib/components/Tagline.svelte'
 
   /** @type {import('./$types').PageData} */
   export let data
@@ -13,7 +14,7 @@
   // see https://og-image.vercel.app/ for more options.
   const ogImage = `https://og-image.vercel.app/**${encodeURIComponent(
     data.post.title
-  )}**?theme=light&md=1&fontSize=100px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fhyper-color-logo.svg`
+  )}**?theme=dark&md=1&fontSize=100px&images=https%3A%2F%2Faifromhell.com/favicon.svg`
 
   const url = `${website}/${data.post.slug}`
 
@@ -96,19 +97,8 @@
         <div class="flex justify-center order-1 col-span-2 gap-4 md:order-2">
           <SocialLinks />
         </div>
-        <div class="flex justify-center order-2 md:order-1 md:col-span-2">
-          {#if avatar}
-            <a href="/" class="inline-block rounded-full">
-              <img
-                src={avatar}
-                alt={name}
-                class="w-24 h-24 mx-auto rounded-full md:w-28 md:h-28 ring-2 ring-zinc-200 dark:ring-zinc-700"
-              />
-            </a>
-          {/if}
-        </div>
-        <p class="order-3 text-base italic text-zinc-600 dark:text-zinc-400">
-          {tagline}
+        <p class="order-3 text-base italic text-zinc-600 dark:text-zinc-400 prose">
+          <Tagline />
         </p>
       </div>
     </div>

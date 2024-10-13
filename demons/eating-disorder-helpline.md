@@ -17,7 +17,6 @@ summary: Instead of supporting the workers who power their sensitive helpline, N
 
 [From {source.author}, {source.site_name}]({source.url}): {source.description}
 
-## Human in the Loop
+**Human in the Loop**: {decision_maker}
 
-- {decision_maker}
-- {summary}
+{summary}

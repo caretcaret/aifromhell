@@ -1,0 +1,1 @@
+AI from hell is here on Earth, and it's because of <a href="/demon/humans-in-the-loop">humans in the loop</a>.

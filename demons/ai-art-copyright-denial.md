@@ -17,7 +17,6 @@ summary: Jason Allen disrespects human artistic process by secretly submitting A
 
 [From {source.author}, {source.site_name}]({source.url}): {source.description}
 
-## Human in the Loop
+**Human in the Loop**: {decision_maker}
 
-- {decision_maker}
-- {summary}
+{summary}
