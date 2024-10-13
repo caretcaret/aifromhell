@@ -6,11 +6,10 @@
   import { afterNavigate } from '$app/navigation'
   import PostDate from '$lib/components/PostDate.svelte'
   import Tagline from '$lib/components/Tagline.svelte'
+  import { page } from '$app/stores'
 
   /** @type {import('./$types').PageData} */
   export let data
-
-  const url = `${website}/${data.post.slug}`
 
   // if we came from /demons, we will use history to go back to preserve
   // posts pagination
@@ -34,7 +33,7 @@
   <meta name="author" content={name} />
 
   <!-- Facebook Meta Tags -->
-  <meta property="og:url" content={url} />
+  <meta property="og:url" content={website + $page.url.pathname} />
   <meta property="og:type" content="article" />
   <meta property="og:title" content={data.post.title} />
   <meta property="og:description" content={data.post.preview.text} />
@@ -43,7 +42,7 @@
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta property="twitter:domain" content={website} />
-  <meta property="twitter:url" content={url} />
+  <meta property="twitter:url" content={website + $page.url.pathname} />
   <meta name="twitter:title" content={data.post.title} />
   <meta name="twitter:description" content={data.post.preview.text} />
   <meta name="twitter:image" content={data.post?.source?.image ?? (website + '/cover.png')} />
