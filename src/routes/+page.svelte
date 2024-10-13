@@ -35,7 +35,7 @@
         href="/"
       >
         <h1
-          class="text-5xl font-bold tracking-tighter text-nowrap sm:text-7xl !text-transparent bg-clip-text bg-gradient-to-b from-red-500 to-red-700 dark:to-red-300"
+          class="text-4xl font-bold tracking-tighter text-nowrap sm:text-7xl !text-transparent bg-clip-text bg-gradient-to-b from-red-500 to-red-700 dark:to-red-300"
         >
           AI FROM HELL
         </h1>
