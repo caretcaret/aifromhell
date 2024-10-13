@@ -10,12 +10,6 @@
   /** @type {import('./$types').PageData} */
   export let data
 
-  // generated open-graph image for sharing on social media.
-  // see https://og-image.vercel.app/ for more options.
-  const ogImage = `https://og-image.vercel.app/**${encodeURIComponent(
-    data.post.title
-  )}**?theme=dark&md=1&fontSize=100px&images=https%3A%2F%2Faifromhell.com/favicon.svg`
-
   const url = `${website}/${data.post.slug}`
 
   // if we came from /demons, we will use history to go back to preserve
@@ -41,10 +35,10 @@
 
   <!-- Facebook Meta Tags -->
   <meta property="og:url" content={url} />
-  <meta property="og:type" content="website" />
+  <meta property="og:type" content="article" />
   <meta property="og:title" content={data.post.title} />
   <meta property="og:description" content={data.post.preview.text} />
-  <meta property="og:image" content={ogImage} />
+  <meta property="og:image" content={data.post?.source?.image ?? (website + '/cover.png')} />
 
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image" />
@@ -52,7 +46,7 @@
   <meta property="twitter:url" content={url} />
   <meta name="twitter:title" content={data.post.title} />
   <meta name="twitter:description" content={data.post.preview.text} />
-  <meta name="twitter:image" content={ogImage} />
+  <meta name="twitter:image" content={data.post?.source?.image ?? (website + '/cover.png')} />
 </svelte:head>
 
 <div class="root max-w-2xl mx-auto lg:max-w-none">

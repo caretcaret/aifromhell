@@ -3,7 +3,8 @@
   import PostsList from '$lib/components/PostsList.svelte'
   import SocialLinks from '$lib/components/SocialLinks.svelte'
   import Tagline from '$lib/components/Tagline.svelte'
-  import { avatar, tagline, name } from '$lib/info.js'
+  import { avatar, tagline, name, website } from '$lib/info.js'
+  import { page } from '$app/stores'
 
   /** @type {import('./$types').PageData} */
   export let data
@@ -12,6 +13,18 @@
 <svelte:head>
   <title>{name}</title>
   <meta name="description" content={tagline} />
+  <meta property="og:title" content={name} />
+  <meta property="og:type" content="website" />
+	<meta property="og:description" content={tagline} />
+	<meta property="og:url" content={website + $page.url.pathname} />
+  <meta property="og:image" content={website + '/cover.png'} />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="twitter:domain" content={website} />
+  <meta property="twitter:url" content={website + $page.url.pathname} />
+  <meta name="twitter:title" content={name} />
+  <meta name="twitter:description" content={tagline} />
+  <meta name="twitter:image" content={website + '/cover.png'} />
 </svelte:head>
 
 <div class="flex flex-col flex-grow gap-8 pb-16">
@@ -30,13 +43,6 @@
       <p class="text-lg italic text-zinc-600 dark:text-zinc-400 prose">
         <Tagline />
       </p>
-      {#if avatar}
-        <img
-          src={avatar}
-          alt={name}
-          class="mx-auto rounded-full w-36 h-36 ring-2 ring-zinc-200 dark:ring-zinc-700"
-        />
-      {/if}
       <div class="flex gap-6">
         <SocialLinks />
       </div>
