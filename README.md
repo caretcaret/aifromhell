@@ -4,7 +4,7 @@
 
 ## How to contribute
 
-Add a new markdown file in `demons/`, following the format of the other posts. Send a pull request.
+Add a new markdown file in `demons/`, following the [format of the other posts](SPEC.md). Send a pull request.
 
 ## How to develop
 
