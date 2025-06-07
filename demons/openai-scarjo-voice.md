@@ -12,10 +12,3 @@ source:
 decision_maker: Sam Altman, CEO of OpenAI
 summary: Sam Altman chooses to recreate Scarlett Johannson's likeness, even after she declined permission to use it.
 ---
-![{source.description}]({source.image})
-
-[From {source.author}, {source.site_name}]({source.url}): {source.description}
-
-**Human in the Loop**: {decision_maker}
-
-{summary}

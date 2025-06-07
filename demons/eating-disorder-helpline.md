@@ -12,11 +12,3 @@ source:
 decision_maker: Liz Thompson, CEO of National Eating Disorder Association (NEDA)
 summary: Instead of supporting the workers who power their sensitive helpline, NEDA chose to replace them with an incapable chatbot.
 ---
-
-![{source.description}]({source.image})
-
-[From {source.author}, {source.site_name}]({source.url}): {source.description}
-
-**Human in the Loop**: {decision_maker}
-
-{summary}

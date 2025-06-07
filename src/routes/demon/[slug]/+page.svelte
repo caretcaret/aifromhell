@@ -1,5 +1,6 @@
 <script>
   import { website, name, tagline, avatar } from '$lib/info.js'
+import Demon from '$lib/components/Demon.svelte';
   import ToC from '$lib/components/ToC.svelte'
   import ArrowLeftIcon from '$lib/components/ArrowLeftIcon.svelte'
   import SocialLinks from '$lib/components/SocialLinks.svelte'
@@ -79,7 +80,9 @@
 
       <!-- render the post -->
       <div class="prose dark:prose-invert ">
-        <svelte:component this={data.component} />
+        <Demon post={data.post}>
+          <svelte:component this={data.component} />
+        </Demon>
       </div>
     </article>
 

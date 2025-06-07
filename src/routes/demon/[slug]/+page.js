@@ -4,6 +4,12 @@
  *
  * @type {import('@sveltejs/kit').PageLoad}
  */
+/**
+ * Dynamically loads the svelte component for the post (only possible in +page.js)
+ * and pass on the data from +page.server.js
+ *
+ * @type {import('@sveltejs/kit').PageLoad}
+ */
 export async function load({ data }) {
   // load the markdown file based on slug
   const component = data.post.isIndexFile

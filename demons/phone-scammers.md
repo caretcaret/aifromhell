@@ -12,10 +12,3 @@ source:
 decision_maker: Scammers
 summary: Scammers choose to exploit the vulnerable.
 ---
-![{source.description}]({source.image})
-
-[From {source.author}, {source.site_name}]({source.url}): {source.description}
-
-**Human in the Loop**: {decision_maker}
-
-{summary}

@@ -12,10 +12,3 @@ source:
 decision_maker: Hiring departments using AI to screen resumes
 summary: AI cannot make fair and equitable decisions about employment.
 ---
-![{source.description}]({source.image})
-
-[From {source.author}, {source.site_name}]({source.url}): {source.description}
-
-**Human in the Loop**: {decision_maker}
-
-{summary}

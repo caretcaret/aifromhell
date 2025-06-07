@@ -12,10 +12,3 @@ source:
 decision_maker: Aravind Srinivas, CEO of Perplexity
 summary: Perplexity offers to replace journalists and engineers with AI, despite claiming the contrary.
 ---
-![{source.description}]({source.image})
-
-[From {source.author}, {source.site_name}]({source.url}): {source.description}
-
-**Human in the Loop**: {decision_maker}
-
-{summary}

@@ -12,11 +12,3 @@ source:
 decision_maker: Jason Allen
 summary: Jason Allen disrespects human artistic process by secretly submitting AI art to an art competition and winning it. He boasts “Art is dead, dude. It’s over. AI won. Humans lost,” then gets upset when humans aren't respecting his artistic process.
 ---
-
-![{source.description}]({source.image})
-
-[From {source.author}, {source.site_name}]({source.url}): {source.description}
-
-**Human in the Loop**: {decision_maker}
-
-{summary}

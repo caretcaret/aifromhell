@@ -12,10 +12,3 @@ source:
 decision_maker: Edward Tian, CEO of GPTZero; Alon Yamin, CEO of Copyleaks
 summary: These AI detection startups sell their unsubstantiated and unreliable AI detection software, with huge consequences and no recourse.
 ---
-![{source.description}]({source.image})
-
-[From {source.author}, {source.site_name}]({source.url}): {source.description}
-
-**Human in the Loop**: {decision_maker}
-
-{summary}
